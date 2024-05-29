@@ -1,0 +1,38 @@
+@{
+ViewData ["Title"] = "Alumnos Nuevos";
+}
+
+
+<form asp-asp-controller="Alumnos" asp-action="AlumnosSave">
+    <div class="mb-3">
+        <label for="nombre" class="from-label">Nombre</label>
+        <br>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba el nombre del alumno" />
+        <br>
+
+        <label for="edad" class="from-label">Edad</label>
+        <br>
+        <input type="number" class="form-control" id="nombre" name="nombre" placeholder="Edad Actual" />
+        <br>
+
+         <label for="preparatoria" class="from-label">Preparatoria</label>
+        <br>
+        <input type="number" class="form-control" id="nombre" name="nombre" placeholder="Preparatoria Recidente" />
+        <br>
+
+         <label for="numero" class="from-label">Telefono</label>
+        <br>
+        <input type="number" class="form-control" id="nombre" name="nombre" placeholder="Telefono Personal" />
+        <br>
+
+         <label for="discapacidad" class="from-label">Discapacidad</label>
+        <br>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Discapacidad del Alumno" />
+        <br>
+
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button asp-action="Alumnoslist" type="Submit" class="btn btn-secundary">Cancelar</button>
+</form>
